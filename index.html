@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Pulsante Magico</title>
+<title>Pulsante</title>
 
 <style>
-
 body{
-font-family: Arial, sans-serif;
-background:#121212;
+background:black;
 color:white;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 height:100vh;
-margin:0;
-text-align:center;
-}
-
-h1{
-margin-bottom:40px;
+flex-direction:column;
+font-family:Arial;
 }
 
 button{
-
-font-size:28px;
-padding:25px 40px;
+font-size:30px;
+padding:20px 40px;
+border-radius:10px;
 border:none;
-border-radius
+background:red;
+color:white;
+cursor:pointer;
+}
+
+#msg{
+margin-top:30px;
+font-size:35px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Premi il pulsante</h1>
+
+<button onclick="cliccato()">Premi qui</button>
+
+<div id="msg"></div>
+
+<script>
+
+function cliccato(){
+document.getElementById("msg").innerText="Grazie Stronzo 😂"
+}
+
+</script>
+
+</body>
+</html>
